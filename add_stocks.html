@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ADD STOCKS</title>
+    <link rel="stylesheet" href="add_stocks.css">
+</head>
+<body>
+
+    <div class="header">
+        <p>ADD STOCKS</p>
+    </div>
+
+    <div class="content">
+
+
+        <div class="layer1">
+            <div class="container_product">
+                <label for="value1Input">BOOTCUT JEANS</label>
+                <input type="number" id="value1Input"><br>
+            </div>
+
+            <div class="container_product">
+                <label for="value2Input">RIPPED JEANS</label>
+                <input type="number" id="value2Input"><br>
+                
+            </div>
+
+            <div class="container_product">
+                <label for="value3Input">SKINNY JEANS</label>
+                <input type="number" id="value3Input"><br>
+            </div>
+
+            <div class="container_product">
+                <label for="value4Input">STRAIGHT LEG JEANS</label>
+                <input type="number" id="value4Input"><br>
+            </div>
+          
+            
+            
+          
+           
+        
+           
+        </div>
+
+        <div class="layer2">
+            <div class="container_product">
+                <label for="value5Input">CROP TOP</label>
+                <input type="number" id="value5Input"><br>
+            </div>
+
+            <div class="container_product">
+                <label for="value6Input">HENLEY T-SHIRT</label>
+                <input type="number" id="value6Input"><br>
+                
+            </div>
+
+            <div class="container_product">
+                <label for="value7Input">POLO SHIRT</label>
+                <input type="number" id="value7Input"><br>
+            </div>
+
+            <div class="container_product">
+                <label for="value8Input">V-NECK T-SHIRT</label>
+                <input type="number" id="value8Input"><br>
+            </div>
+
+            
+
+            
+    
+           
+        </div>
+
+        <div class="layer3">
+            <div class="container_product">
+                <label for="value9Input">BODY MIST SPLASH</label>
+                <input type="number" id="value9Input"><br>
+            </div>
+            <div class="container_product">
+                <label for="value10Input">EAU DE COLOGNE</label>
+                <input type="number" id="value10Input"><br>
+            </div>
+
+            <div class="container_product">
+                <label for="value11Input">PARFUM</label>
+                <input type="number" id="value11Input"><br>
+            </div>
+
+            <div class="container_product">
+                <label for="value12Input">SAUVAGE</label>
+            <input type="number" id="value12Input"><br>
+            </div>
+
+
+
+         
+            
+           
+        
+           
+        
+            
+        </div>
+
+        <div class="layer4">
+            <div class="container_product">
+                <label for="value13Input">TANK TOP</label>
+                <input type="number" id="value13Input"><br>
+            </div>
+
+            <div class="container_product">
+                <label for="value14Input">MESH TANK</label>
+                <input type="number" id="value14Input"><br>
+            </div>
+
+            <div class="container_product">
+                <label for="value15Input">ATHLETIC TANK</label>
+                <input type="number" id="value15Input"><br>
+            </div>
+
+            <div class="container_product">
+                <label for="value16Input">RACERBACK TANK</label>
+                <input type="number" id="value16Input"><br>
+            </div>
+
+         
+        
+           
+        
+         
+        
+           
+        </div>
+
+        <div class="layer5">
+            <div class="container_product">
+                <label for="value17Input">BRICK GAME</label>
+                <input type="number" id="value17Input"><br>
+            
+            </div>
+
+            <div class="container_product">
+                <label for="value18Input">RC CAR</label>
+                <input type="number" id="value18Input"><br>
+            </div>
+
+            <div class="container_product">
+                <label for="value19Input">ACTION FIGURE</label>
+                <input type="number" id="value19Input"><br>
+            
+            </div>
+
+            <div class="container_product">
+                <label for="value20Input">BOARD GAMES</label>
+                <input type="number" id="value20Input"><br>
+            </div>
+
+           
+        
+           
+        
+          
+           
+        </div>
+
+    </div>
+
+    <div class="footer">
+
+        <button onclick="updateFirstHTML()">UPDATE</button>
+    </div>
+    
+   
+
+
+  
+
+
+    
+
+    <script>
+        function updateFirstHTML() {
+            const value1 = document.getElementById('value1Input').value;
+            const value2 = document.getElementById('value2Input').value;
+            const value3 = document.getElementById('value3Input').value;
+            const value4 = document.getElementById('value4Input').value;
+
+            const value5 = document.getElementById('value5Input').value;
+            const value6 = document.getElementById('value6Input').value;
+            const value7 = document.getElementById('value7Input').value;
+            const value8 = document.getElementById('value8Input').value;
+
+            const value9 = document.getElementById('value9Input').value;
+            const value10 = document.getElementById('value10Input').value;
+
+            const value11 = document.getElementById('value11Input').value;
+            const value12 = document.getElementById('value12Input').value;
+
+            const value13 = document.getElementById('value13Input').value;
+            const value14 = document.getElementById('value14Input').value;
+            const value15 = document.getElementById('value15Input').value;
+            const value16 = document.getElementById('value16Input').value;
+
+            const value17 = document.getElementById('value17Input').value;
+            const value18 = document.getElementById('value18Input').value;
+            const value19 = document.getElementById('value19Input').value;
+            const value20 = document.getElementById('value20Input').value;
+          
+          
+
+            localStorage.setItem('value1', value1);
+            localStorage.setItem('value2', value2);
+            localStorage.setItem('value3', value3);
+            localStorage.setItem('value4', value4);
+
+            localStorage.setItem('value5', value5);
+            localStorage.setItem('value6', value6);
+            localStorage.setItem('value7', value7);
+            localStorage.setItem('value8', value8);
+
+            localStorage.setItem('value9', value9);
+            localStorage.setItem('value10', value10);
+            localStorage.setItem('value11', value11);
+            localStorage.setItem('value12', value12);
+
+            localStorage.setItem('value13', value13);
+            localStorage.setItem('value14', value14);
+            localStorage.setItem('value15', value15);
+            localStorage.setItem('value16', value16);
+
+            localStorage.setItem('value17', value17);
+            localStorage.setItem('value18', value18);
+            localStorage.setItem('value19', value19);
+            localStorage.setItem('value20', value20);
+           
+
+            window.opener.location.reload();
+        }
+    </script>
+</body>
+</html>
